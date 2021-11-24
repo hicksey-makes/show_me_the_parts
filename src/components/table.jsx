@@ -26,6 +26,18 @@ function TableMaker() {
   if (partAtts) {
     console.log(partAtts);
   }
+
+  function renderTable() {
+    return partAtts.map((attribute, index) => {
+      const { _id, name, value } = attribute;
+      return (
+        <tr key={_id}>
+          <td>{name}:</td><td>{value}</td>
+        </tr>
+      )
+    });
+  }
+
   return  (
     <div className="comp-space container">
       <h2 className="section-head">PARTS ATTRIBUTES</h2>
@@ -37,8 +49,7 @@ function TableMaker() {
           </tr>
         </thead>
         <tbody>
-          {
-          }
+          {renderTable()}
         </tbody>
       </table>
     </div>
