@@ -31,8 +31,8 @@ function TableMaker() {
     return partAtts.map((attribute, index) => {
       const { _id, name, value } = attribute;
       return (
-        <tr key={_id}>
-          <td>{name}:</td><td>{value}</td>
+        <tr key={_id} className="mono">
+          <td className="contrast">{name}:</td><td className="contrast">{value}</td>
         </tr>
       )
     });
