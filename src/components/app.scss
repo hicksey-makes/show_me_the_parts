@@ -124,8 +124,8 @@ h2 {
 }
 
 #icon {
-  margin-top: -25px;
-  font-size: 20px;
+  margin-top: 5px;
+  font-size: 16px;
   color: white;
   margin-right: 15px;
 }
@@ -197,9 +197,34 @@ table {
 .grow-height {
   min-height: 500px;
 }
+
+@media only screen and (min-width: 410px) {
+  #icon {
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (min-width: 485px) {
+  #icon {
+    margin-top: 13px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 639px) {
+  #icon {
+    margin-top: 17px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  #icon {
+    margin-top: 19px;
+  }
+}
+
 @media only screen and (min-width: 641px) {
   #icon {
-    margin-top: -35px;
     font-size: 25px;
   }
   .topnav {
@@ -219,16 +244,18 @@ table {
   }
   #icon {
     font-size: 30px;
-    margin-top: -55px;
   }
    .topnav {
      margin-top: -18px;
    }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1022px) {
   .first-flex {
     flex-basis: 1050px;
+  }
+  #icon {
+    margin-top: 30px;
   }
 }
 
@@ -238,7 +265,6 @@ table {
   }
   #icon {
     font-size: 35px;
-    margin-top: -60px;
   }
   .topnav {
     margin-top: -20px;

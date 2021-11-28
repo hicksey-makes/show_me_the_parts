@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter, faFacebook} from '@fortawesome/free-brands-svg-icons';
 import Part from '../Assets/Images/finding-brand.png';
+import Brand from '../Assets/Images/SMTPlogo.png';
 
 function CollapseNav() {
   const [navDisplay, setNavDisplay] = useState(false);
@@ -14,7 +15,7 @@ function CollapseNav() {
   return (
     <>
     <div className="flex" id="toggle-wrap">
-    <div className="first-flex"></div>
+    <div className="first-flex"><img src={Brand} alt="Show me the parts logo" /></div>
     <a href="#" className="icon second-flex" id="icon" onClick={() => toggleNavbar()}>
       <span className="sr-only">Toggle navigation</span>
       <FontAwesomeIcon icon={faBars} />
@@ -31,9 +32,7 @@ function CollapseNav() {
         <li><a href="#"><FontAwesomeIcon icon={faTwitter}  /></a></li>
         <li><a href="#"><FontAwesomeIcon icon={faFacebook}  /></a></li>
         <li><a href="#"><img src={Part} alt="Request a brand" /></a></li>
-
       </ul>
-
     </div>
   </>);
 
