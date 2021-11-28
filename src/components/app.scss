@@ -1,6 +1,6 @@
 @import '../font.scss';
 
-
+/***     Global     ***/
 $navajo: #FFDB9E;
 $creamsicle: #FFD182;
 $primary1: #EFEDF1;
@@ -19,11 +19,14 @@ $secondary: #181739;
 h2 {
   color: $secondary;
 }
+
+/***   PartImg Comp   ***/
 #part-headline {
   font-size: 42px;
   line-height: 48px;
 }
 
+/***   Tables   ***/
 .container {
   background-color: $primary1;
 
@@ -44,7 +47,7 @@ h2 {
     }
 }
 
-/**   Navigation   **/
+/***   Navigation   ***/
 .remove-nav {
   display: none;
 }
@@ -194,7 +197,7 @@ table {
 .grow-height {
   min-height: 500px;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   #icon {
     margin-top: -35px;
     font-size: 25px;
