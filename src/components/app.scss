@@ -56,7 +56,6 @@ h2 {
   top:0;
   left: 0;
   right: 0;
-  margin-top: -13px;
   ul {
     list-style-type: none;
     margin: 0;
@@ -190,8 +189,8 @@ table {
 }
 
 #part-wrap {
-    padding: 5px 25px 5px 25px;
-    max-width: 860px;
+  padding: 5px 25px 5px 25px;
+  max-width: 860px;
 }
 
 .grow-height {
@@ -227,9 +226,6 @@ table {
   #icon {
     font-size: 25px;
   }
-  .topnav {
-    margin-top: -16px;
-  }
 }
 
 @media only screen and (max-width: 744px) {
@@ -245,9 +241,6 @@ table {
   #icon {
     font-size: 30px;
   }
-   .topnav {
-     margin-top: -18px;
-   }
 }
 
 @media only screen and (min-width: 1022px) {
@@ -265,8 +258,5 @@ table {
   }
   #icon {
     font-size: 35px;
-  }
-  .topnav {
-    margin-top: -20px;
   }
 }
