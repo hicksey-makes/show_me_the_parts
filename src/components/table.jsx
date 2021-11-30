@@ -15,7 +15,7 @@ function TableMaker() {
     })
     .then(response => response.json())
     .then(data => {
-	      console.log(data);
+	      // console.log(data);
         setPartAtts(data);
     })
     .catch(err => {
@@ -24,7 +24,7 @@ function TableMaker() {
 
   }, []);
   if (partAtts) {
-    console.log(partAtts);
+    // console.log(partAtts);
   }
 
   function renderTable() {

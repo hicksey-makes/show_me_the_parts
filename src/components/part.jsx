@@ -14,11 +14,11 @@ function PartMaker() {
       }
     })
     .then(response => {
-      console.log(response);
+      // console.log(response);
       return response.json()
     })
     .then(data => {
-	      console.log(data);
+	      // console.log(data);
         setPartDeets(data);
     })
     .catch(err => {

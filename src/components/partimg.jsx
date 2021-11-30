@@ -5,21 +5,20 @@ function ImgMaker() {
   const [imgDeets, setImgDeets] = useState([]);
 
   useEffect(() => {
-    fetch("https://fairestdb.p.rapidapi.com/carpart/imageModel/_id/imageModel1636768014937", {
-	     "method": "GET",
-	      "headers": {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-		        "x-rapidapi-host": "fairestdb.p.rapidapi.com",
-		        "x-rapidapi-key": "23680a36f3msh74c57401435d3cfp151b19jsndc9f0c9b453e"
-	      }
+    fetch("https://fairestdb.p.rapidapi.com/carpart/imageModel", {
+    	"method": "GET",
+    	"headers": {
+        "content-type": "application/json",
+    		"x-rapidapi-host": "fairestdb.p.rapidapi.com",
+    		"x-rapidapi-key": "23680a36f3msh74c57401435d3cfp151b19jsndc9f0c9b453e"
+    	}
     })
     .then(response => {
-      // console.log(response);
+      console.log(response);
       return response.json();
     })
     .then(data => {
-	      // console.log(data);
+	      console.log(data);
         setImgDeets(data);
     })
     .catch(err => {

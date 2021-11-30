@@ -5,16 +5,17 @@ function BuyersTMaker() {
 
   useEffect(() => {
     // read all entities
-  fetch("https://fairestdb.p.rapidapi.com/car/car.Model", {
-    "method": "GET",
-    "headers": {
-      "x-rapidapi-host": "fairestdb.p.rapidapi.com",
-      "x-rapidapi-key": "23680a36f3msh74c57401435d3cfp151b19jsndc9f0c9b453e"
-    }
+  fetch("https://fairestdb.p.rapidapi.com/car/rideHeightBuys", {
+    	"method": "GET",
+    	"headers": {
+        "content-type": "application/json",
+    		"x-rapidapi-host": "fairestdb.p.rapidapi.com",
+    		"x-rapidapi-key": "23680a36f3msh74c57401435d3cfp151b19jsndc9f0c9b453e"
+    	}
   })
   .then(response => response.json())
   .then(data => {
-    console.log(data);
+    // console.log(data);
     setCars(data);
   })
   .catch(err => { console.error(err);
