@@ -32,7 +32,7 @@ function TableMaker() {
       const { _id, name, value } = attribute;
       return (
         <tr key={_id} className="mono">
-          <td className="contrast">{name}:</td><td className="contrast">{value}</td>
+          <td className="contrast">{name}</td><td className="contrast">{value}</td>
         </tr>
       )
     });
