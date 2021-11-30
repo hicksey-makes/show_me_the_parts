@@ -4,18 +4,18 @@ function TableMaker() {
   const [partAtts, setPartAtts] = useState([]);
 
   useEffect(() => {
-    fetch("https://fairestdb.p.rapidapi.com/part/carpartAttributes", {
-	     "method": "GET",
-	      "headers": {
-		        "x-rapidapi-host": "fairestdb.p.rapidapi.com",
-		        "x-rapidapi-key": "23680a36f3msh74c57401435d3cfp151b19jsndc9f0c9b453e",
-            "Content-Type": "application/json",
-            "accept": "application/json",
-        }
+      fetch("https://fairestdb.p.rapidapi.com/part/rideHeightAtts", {
+    	"method": "GET",
+    	"headers": {
+        "content-type": "application/json",
+        "accept": "application/json",
+    		"x-rapidapi-host": "fairestdb.p.rapidapi.com",
+    		"x-rapidapi-key": "23680a36f3msh74c57401435d3cfp151b19jsndc9f0c9b453e"
+    	}
     })
     .then(response => response.json())
     .then(data => {
-	      // console.log(data);
+	      console.log(data);
         setPartAtts(data);
     })
     .catch(err => {

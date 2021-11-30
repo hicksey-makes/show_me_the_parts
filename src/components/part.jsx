@@ -5,18 +5,20 @@ function PartMaker() {
 
   useEffect(() => {
     fetch("https://fairestdb.p.rapidapi.com/carpart/carpartModel", {
-	     "method": "GET",
-	      "headers": {
-		        "x-rapidapi-host": "fairestdb.p.rapidapi.com",
-		        "x-rapidapi-key": "23680a36f3msh74c57401435d3cfp151b19jsndc9f0c9b453e"
-	      }
+      "method": "GET",
+      "headers": {
+        "content-type": "application/json",
+        "accept": "application/json",
+        "x-rapidapi-host": "fairestdb.p.rapidapi.com",
+        "x-rapidapi-key": "23680a36f3msh74c57401435d3cfp151b19jsndc9f0c9b453e"
+      }
     })
     .then(response => {
-      // console.log(response);
+      console.log(response);
       return response.json()
     })
     .then(data => {
-	      // console.log(data);
+	      console.log(data);
         setPartDeets(data);
     })
     .catch(err => {
@@ -28,8 +30,8 @@ function PartMaker() {
   //   console.log(partDeets);
   // }
   const brand = partDeets.map(partdeet => partdeet.Brand);
-  const type = partDeets.map(partdeet => partdeet['Part-Type']);
-  const number = partDeets.map(partdeet => partdeet['Part-Number']);
+  const type = partDeets.map(partdeet => partdeet['PartType']);
+  const number = partDeets.map(partdeet => partdeet['PartNumber']);
   const comment = partDeets.map(partdeet => partdeet.Comment);
   // console.log(comment);
   // let partpropvals = partDeets.forEach(partdeet => {
