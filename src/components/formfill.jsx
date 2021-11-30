@@ -73,6 +73,23 @@ function FillForm() {
     });
   }
 
+  function Update(e) {
+    fetch(`https://fairestdb.p.rapidapi.com/car/car.Model/_id/${id}`, {
+      "method": "PUT",
+      "headers": {
+        "content-type": "application/json",
+        "x-rapidapi-host": "fairestdb.p.rapidapi.com",
+        "x-rapidapi-key": "23680a36f3msh74c57401435d3cfp151b19jsndc9f0c9b453e"
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+    })
+    .catch(err => {
+      console.error(err);
+    });
+  }
   return (
     <div>
     <form className="">
@@ -138,7 +155,7 @@ function FillForm() {
               <button className="btn btn-primary" type='button' onClick={(e) => Create(e)}>
                 Add
               </button>
-              <button className="btn btn-info" type='button'>
+              <button className="btn btn-info" type='button' onClick={(e) => Update(e)}>
                   Update
               </button>
               <button className="btn btn-danger" type='button' onClick={(e) => Delete(e)}>
