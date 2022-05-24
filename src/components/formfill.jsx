@@ -31,7 +31,7 @@ function FillForm() {
   function Create(e) {
     // e.preventDefault();
     //create entities
-    fetch("https://fairestdb.p.rapidapi.com/car/car.Model", {
+    fetch("https://fairestdb.p.rapidapi.com/car/rideHeightBuys", {
       "method": "POST",
       "headers": {
         "content-type": "application/json",
@@ -57,7 +57,7 @@ function FillForm() {
     // delete entity - DELETE
     // e.preventDefault();
     // deletes entities
-    fetch(`https://fairestdb.p.rapidapi.com/car/car.Model/_id/${id}`, {
+    fetch(`https://fairestdb.p.rapidapi.com/car/rideHeightBuys/_id/${id}`, {
       "method": "DELETE",
       "headers": {
         "x-rapidapi-host": "fairestdb.p.rapidapi.com",
@@ -74,7 +74,7 @@ function FillForm() {
   }
 
   function Update(e) {
-    fetch(`https://fairestdb.p.rapidapi.com/car/car.Model/_id/${id}`, {
+    fetch(`https://fairestdb.p.rapidapi.com/car/rideHeightBuys/_id/${id}`, {
       "method": "PUT",
       "headers": {
         "content-type": "application/json",

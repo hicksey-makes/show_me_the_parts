@@ -15,7 +15,7 @@ function BuyersTMaker() {
   })
   .then(response => response.json())
   .then(data => {
-    // console.log(data);
+    console.log(data);
     setCars(data);
   })
   .catch(err => { console.error(err);
