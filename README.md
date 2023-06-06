@@ -16,3 +16,4 @@ Update: the database stopped being serviced sometime in 2022, and has since retu
 
 
 ![faiRESTdb](https://github.com/hicksey-makes/show_me_the_parts/assets/36872516/5ca855cc-defa-441b-943a-ae177672884a)
+![faiRESTbd_502err](https://github.com/hicksey-makes/show_me_the_parts/assets/36872516/a8e2fa07-6190-4701-bc9e-9bda3981e773)
